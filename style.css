@@ -10,8 +10,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: mytheme
 Tags: custom-background, custom-logo, custom-menu, featured-images, theme-options
 */
-body {
-    font-family: Arial, sans-serif;
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
 }
 
 /* Navigation Menu Styles */
@@ -19,6 +19,8 @@ body {
     background: #333;
     text-align: center;
     padding: 10px 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2em;
 }
 
 .main-navigation ul {
@@ -41,4 +43,151 @@ body {
 .main-navigation ul li a:focus {
     background: #555;
     color: #fff;
+}
+
+/* This CSS targets the main content area just below the header */
+main {
+    padding-top: 30%; /* Adjust this value based on the actual height of your header */
+}
+
+
+/* Centers the h1 tag and ensures the entire header is centered if desired */
+header h1 {
+    text-align: center;
+    margin: 0 auto; /* Ensures it's centered relative to its container */
+}
+
+/* Styles the link within the h1 to not show an underline and inherit text styles */
+header h1 a {
+    text-decoration: none; /* Removes underline from the link */
+    color: inherit; /* Ensures the link color matches the surrounding text, adjust as needed */
+    font-weight: bold; /* Optional: adjusts weight if needed */
+}
+
+.header-container {
+    position: relative;
+    width: 100%;
+    height: auto; /* or set a specific height */
+    padding-top: 1em;
+}
+
+.bg-image-widget {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensure it covers the header area */
+    z-index: -1; /* Behind the content */
+}
+
+.bg-image-widget img {
+    width: 100%;
+    height: auto;
+    display: block; /* Cover the area fully */
+}
+
+.main-navigation {
+    position: relative;
+    z-index: 10; /* Higher than the image to ensure it's on top */
+    background: rgba(255, 255, 255, 0);
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2em;
+}
+
+.main-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.main-navigation ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-navigation ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.main-navigation ul li a:hover,
+.main-navigation ul li a:focus {
+    background: #555;
+    color: #fff;
+}
+
+/* Large screens, desktops (large monitors) */
+@media only screen and (min-width: 1200px) {
+    header {
+        position: static;
+        width: 100%;
+    }
+
+    .main-navigation {
+        font-size: 22px; /* Slightly larger text for large screens */
+    }
+}
+
+/* Medium screens, desktops (small monitors, laptops) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    header {
+        position: static; /* Or another position if necessary */
+    }
+
+    main {
+        padding-top: 280px; /* Optimal padding for medium screens */
+    }
+
+    .main-navigation {
+        font-size: 22px; /* Medium size text */
+    }
+}
+
+/* Small devices (landscape tablets, large phones) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    header {
+        position: static;
+    }
+
+    main {
+        padding-top: 240px; /* Less padding as screen gets smaller */
+    }
+
+    .main-navigation {
+        font-size: 22px; /* Smaller text in the navigation */
+    }
+}
+
+/* Extra small devices (portrait tablets, large phones) */
+@media only screen and (max-width: 767px) {
+    header {
+        position: static;
+    }
+
+    main {
+        padding-top: 140px; /* Even less padding for small devices */
+    }
+
+    .main-navigation {
+        font-size: 22px;/* Even smaller text for ease of reading */
+    }
+}
+
+/* Very small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header {
+        position: static;
+    }
+
+    main {
+        padding-top: 80px; /* Minimal padding for very small devices */
+    }
+
+    .main-navigation {
+        font-size: 22px; /* Smallest text for compact navigation */
+    }
 }
