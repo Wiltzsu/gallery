@@ -1,15 +1,6 @@
 <?php get_header(); ?>
 
-<!--
-<div class="container-fluid p-0">
-  <?php
-    if ( is_active_sidebar( 'custom-sidebar0' ) ) {
-      dynamic_sidebar( 'custom-sidebar0' );
-    }
-  ?>
-</div>
--->
-<div class="container p-5 aboutStyling" id="about">
+<div class="container p-5 frontpageStyling" id="about">
   <?php
     if ( is_active_sidebar( 'custom-sidebar1' ) ) {
       dynamic_sidebar( 'custom-sidebar1' );
@@ -17,16 +8,28 @@
   ?>
 </div>
 
+<div class="container " id="">
+  <?php
+    if ( is_active_sidebar( 'custom-sidebar2' ) ) {
+      dynamic_sidebar( 'custom-sidebar2' );
+    }
+  ?>
+</div>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12">
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <h2><?php the_title(); ?></h2>
-                <?php the_content(); ?>
-            <?php endwhile; endif; ?>
-        </div>
-    </div>
+<div class="container p-5 contactFormStyling " id="">
+  <?php
+    if ( is_active_sidebar( 'custom-sidebar3' ) ) {
+      dynamic_sidebar( 'custom-sidebar3' );
+    }
+  ?>
+</div>
+
+<div class="container-fluid p-5 footerStyling" id="backToTop">
+  <?php
+    if ( is_active_sidebar( 'custom-sidebar4' ) ) {
+      dynamic_sidebar( 'custom-sidebar4' );
+    }
+  ?>
 </div>
 
 <?php get_footer(); ?>

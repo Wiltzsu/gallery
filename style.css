@@ -47,7 +47,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 /* This CSS targets the main content area just below the header */
 main {
-    padding-top: 30%; /* Adjust this value based on the actual height of your header */
+    padding-top: 42%; /* Adjust this value based on the actual height of your header */
 }
 
 
@@ -61,7 +61,8 @@ header h1 {
 header h1 a {
     text-decoration: none; /* Removes underline from the link */
     color: inherit; /* Ensures the link color matches the surrounding text, adjust as needed */
-    font-weight: bold; /* Optional: adjusts weight if needed */
+    font-weight: 600; /* Optional: adjusts weight if needed */
+
 }
 
 .header-container {
@@ -116,9 +117,41 @@ header h1 a {
 
 .main-navigation ul li a:hover,
 .main-navigation ul li a:focus {
-    background: #555;
+    background: #a1a1a1;
     color: #fff;
 }
+
+/* Header styling */
+.headerStyling {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Front page text styling */
+.frontpageStyling {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: large;
+}
+
+.contactFormStyling,
+.contactFormStyling wpforms-description,
+.contactFormStyling form input,
+.contactFormStyling form textarea,
+.contactFormStyling form button {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px !important; /* Forces the font size */
+}
+
+
+
+.footerStyling {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.6;
+    background-color: rgb(58, 58, 58);
+}
+
 
 /* Large screens, desktops (large monitors) */
 @media only screen and (min-width: 1200px) {
@@ -184,7 +217,7 @@ header h1 a {
     }
 
     main {
-        padding-top: 80px; /* Minimal padding for very small devices */
+        padding-top: 100px; /* Minimal padding for very small devices */
     }
 
     .main-navigation {

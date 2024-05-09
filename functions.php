@@ -63,7 +63,56 @@ function mytheme_register_widgets1() {
 }
 add_action( 'widgets_init', 'mytheme_register_widgets1' );
 
+###
 
+// Registers a widget area (fontpagegallery)
+function mytheme_register_widgets2() {
+    register_sidebar( array(
+        'name'          => esc_html__( 'Custom Widget Area 2', 'theme-domain' ), // 'name' is what will appear in your WordPress admin area for the widget area.
+        'id'            => 'custom-sidebar2', // 'id' is use for customizing and styling the widget area.
+        'description'   => esc_html__( 'Add widgets here to appear in your sidebar.', 'theme-domain' ), // 'description' provides a description of the widget area for the admin area.
+        // Define the HTML that will be used before and after each widget and widget title in this area.
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'mytheme_register_widgets2' );
+
+###
+
+// Registers a widget area (contact)
+function mytheme_register_widgets3() {
+    register_sidebar( array(
+        'name'          => esc_html__( 'Custom Widget Area 3', 'theme-domain' ), // 'name' is what will appear in your WordPress admin area for the widget area.
+        'id'            => 'custom-sidebar3', // 'id' is use for customizing and styling the widget area.
+        'description'   => esc_html__( 'Add widgets here to appear in your sidebar.', 'theme-domain' ), // 'description' provides a description of the widget area for the admin area.
+        // Define the HTML that will be used before and after each widget and widget title in this area.
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'mytheme_register_widgets3' );
+
+###
+
+// Registers a widget area (footer)
+function mytheme_register_widgets4() {
+    register_sidebar( array(
+        'name'          => esc_html__( 'Custom Widget Area 4', 'theme-domain' ), // 'name' is what will appear in your WordPress admin area for the widget area.
+        'id'            => 'custom-sidebar4', // 'id' is use for customizing and styling the widget area.
+        'description'   => esc_html__( 'Add widgets here to appear in your sidebar.', 'theme-domain' ), // 'description' provides a description of the widget area for the admin area.
+        // Define the HTML that will be used before and after each widget and widget title in this area.
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'mytheme_register_widgets4' );
 
 
 
