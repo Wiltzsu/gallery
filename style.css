@@ -73,6 +73,7 @@ header h1 a {
     width: 100%;
     height: auto; /* or set a specific height */
     padding-top: 1em;
+    margin-top: 0;
 }
 
 .bg-image-widget {

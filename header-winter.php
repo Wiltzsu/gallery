@@ -9,9 +9,9 @@
 <body <?php body_class(); ?>>
 <header>
     <div class="header-container" style="position: relative; z-index: 1;">
-        <?php if ( is_active_sidebar( 'custom-sidebar0' ) ) : ?>
+        <?php if ( is_active_sidebar( 'custom-sidebar6' ) ) : ?>
             <div class="widget-area bg-image-widget" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
-                <?php dynamic_sidebar( 'custom-sidebar0' ); ?>
+                <?php dynamic_sidebar( 'custom-sidebar6' ); ?>
             </div>
         <?php endif; ?>
         <div class="container-fluid p-0">
@@ -29,3 +29,7 @@
 </header>
 
 <main>
+
+
+
+</main>

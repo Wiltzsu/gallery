@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container p-5 frontpageStyling" id="about">
+<div class="container p-5">
   <?php
     if ( is_active_sidebar( 'custom-sidebar1' ) ) {
       dynamic_sidebar( 'custom-sidebar1' );
