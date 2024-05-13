@@ -1,15 +1,11 @@
 <?php get_header(); ?>
 
-<div class="container mt-5">
-    <h1>About Us</h1>
-    <div class="row">
-        <div class="col-md-6">
-            <p>GALLERYYYY</p>
-        </div>
-        <div class="col-md-6">
-            <img src="path_to_image" alt="About Us" class="img-fluid">
-        </div>
-    </div>
+<div class="container p-5  " id="">
+  <?php
+    if ( is_active_sidebar( 'custom-sidebar5' ) ) {
+      dynamic_sidebar( 'custom-sidebar5' );
+    }
+  ?>
 </div>
 
 <?php get_footer(); ?>

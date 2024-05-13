@@ -8,18 +8,10 @@
   ?>
 </div>
 
-<div class="container " id="">
+<div class="container " id="about">
   <?php
     if ( is_active_sidebar( 'custom-sidebar2' ) ) {
       dynamic_sidebar( 'custom-sidebar2' );
-    }
-  ?>
-</div>
-
-<div class="container p-5 contactFormStyling " id="">
-  <?php
-    if ( is_active_sidebar( 'custom-sidebar3' ) ) {
-      dynamic_sidebar( 'custom-sidebar3' );
     }
   ?>
 </div>
