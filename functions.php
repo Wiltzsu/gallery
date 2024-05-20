@@ -170,7 +170,7 @@ add_action( 'widgets_init', 'mytheme_register_widgets7' );
 // Registers a widget area (summer & spring gallery)
 function mytheme_register_widgets8() {
     register_sidebar( array(
-        'name'          => esc_html__( 'Summer & Spring gallery', 'theme-domain' ), // 'name' is what will appear in your WordPress admin area for the widget area.
+        'name'          => esc_html__( 'Summer and Spring gallery', 'theme-domain' ), // 'name' is what will appear in your WordPress admin area for the widget area.
         'id'            => 'custom-sidebar8', // 'id' is use for customizing and styling the widget area.
         'description'   => esc_html__( 'Add widgets here to appear in your sidebar.', 'theme-domain' ), // 'description' provides a description of the widget area for the admin area.
         // Define the HTML that will be used before and after each widget and widget title in this area.
@@ -181,4 +181,38 @@ function mytheme_register_widgets8() {
     ) );
 }
 add_action( 'widgets_init', 'mytheme_register_widgets8' );
+
+###
+
+// Registers a widget area (summer & spring gallery)
+function mytheme_register_widgets9() {
+    register_sidebar( array(
+        'name'          => esc_html__( 'Autumn gallery', 'theme-domain' ), // 'name' is what will appear in your WordPress admin area for the widget area.
+        'id'            => 'custom-sidebar9', // 'id' is use for customizing and styling the widget area.
+        'description'   => esc_html__( 'Add widgets here to appear in your sidebar.', 'theme-domain' ), // 'description' provides a description of the widget area for the admin area.
+        // Define the HTML that will be used before and after each widget and widget title in this area.
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'mytheme_register_widgets9' );
+
+###
+
+// Registers a widget area (birds & mammals gallery)
+function mytheme_register_widgets10() {
+    register_sidebar( array(
+        'name'          => esc_html__( 'Birds and Mammals gallery', 'theme-domain' ), // 'name' is what will appear in your WordPress admin area for the widget area.
+        'id'            => 'custom-sidebar10', // 'id' is use for customizing and styling the widget area.
+        'description'   => esc_html__( 'Add widgets here to appear in your sidebar.', 'theme-domain' ), // 'description' provides a description of the widget area for the admin area.
+        // Define the HTML that will be used before and after each widget and widget title in this area.
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'mytheme_register_widgets10' );
 ?>

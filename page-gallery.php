@@ -37,8 +37,26 @@
     }
     ?>
   </div>
-  <div class="tab-pane fade" id="autumn" role="tabpanel" aria-labelledby="autumn-tab">...</div>
-  <div class="tab-pane fade" id="birdsmammals" role="tabpanel" aria-labelledby="birdsmammals-tab">...</div>
+
+  <!-- Autumn gallery tab -->
+  <div class="tab-pane fade" id="autumn" role="tabpanel" aria-labelledby="autumn-tab">
+  <?php
+    if ( is_active_sidebar( 'custom-sidebar9' ) ) {
+      dynamic_sidebar( 'custom-sidebar9' );
+    }
+    ?>
+  </div>
+
+  <!-- Birds & Mammals gallery tab -->
+  <div class="tab-pane fade" id="birdsmammals" role="tabpanel" aria-labelledby="birdsmammals-tab">
+  <?php
+    if ( is_active_sidebar( 'custom-sidebar10' ) ) {
+      dynamic_sidebar( 'custom-sidebar10' );
+    }
+    ?>
+  </div>
+
+  <!-- Plants & Insects gallery tab -->
   <div class="tab-pane fade" id="plantsinsects" role="tabpanel" aria-labelledby="plantsinsects-tab">...</div>
 </div>
 
