@@ -15,7 +15,7 @@
             </div>
         <?php endif; ?>
         <div class="container-fluid p-0">
-            <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+        <h1 style="font-style: italic;"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
             <nav id="site-navigation" class="main-navigation" style="position: relative; z-index: 2;">
                 <?php
                 wp_nav_menu( array(
