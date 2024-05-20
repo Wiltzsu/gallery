@@ -57,7 +57,13 @@
   </div>
 
   <!-- Plants & Insects gallery tab -->
-  <div class="tab-pane fade" id="plantsinsects" role="tabpanel" aria-labelledby="plantsinsects-tab">...</div>
+  <div class="tab-pane fade" id="plantsinsects" role="tabpanel" aria-labelledby="plantsinsects-tab">
+  <?php
+    if ( is_active_sidebar( 'custom-sidebar11' ) ) {
+      dynamic_sidebar( 'custom-sidebar11' );
+    }
+    ?>
+  </div>
 </div>
 
 </div>
