@@ -20,6 +20,7 @@
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
+  <!-- Winter Gallery tab -->
   <div class="tab-pane fade show active" id="winter" role="tabpanel" aria-labelledby="winter-tab">  
     <?php
     if ( is_active_sidebar( 'custom-sidebar7' ) ) {
@@ -27,8 +28,15 @@
     }
     ?>
   </div>
-  <div class="tab-pane fade" id="winter" role="tabpanel" aria-labelledby="winter-tab">...</div>
-  <div class="tab-pane fade" id="summerspring" role="tabpanel" aria-labelledby="summerspring-tab">...</div>
+
+  <!-- Summer and Spring gallery tab -->
+  <div class="tab-pane fade" id="summerspring" role="tabpanel" aria-labelledby="summerspring-tab">
+  <?php
+    if ( is_active_sidebar( 'custom-sidebar8' ) ) {
+      dynamic_sidebar( 'custom-sidebar8' );
+    }
+    ?>
+  </div>
   <div class="tab-pane fade" id="autumn" role="tabpanel" aria-labelledby="autumn-tab">...</div>
   <div class="tab-pane fade" id="birdsmammals" role="tabpanel" aria-labelledby="birdsmammals-tab">...</div>
   <div class="tab-pane fade" id="plantsinsects" role="tabpanel" aria-labelledby="plantsinsects-tab">...</div>
