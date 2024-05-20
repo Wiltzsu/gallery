@@ -173,6 +173,45 @@ footer {
     color: #ffffff;
 }
 
+/* Gallery page tabs */
+
+/* Container styling to center the tabs */
+.nav-tabs {
+    display: flex;
+    justify-content: center; /* Center the tabs horizontally */
+    list-style-type: none; /* Removes default list styling */
+    padding: 0; /* Removes default padding */
+}
+
+/* Styling for each nav item to ensure they have space between */
+.nav-item {
+    margin-right: 10px; /* Adds space between tabs */
+}
+
+/* Remove margin for the last item */
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+/* Styling for nav-links to change font and add padding */
+.nav-link {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px; /* Adjust the font size */
+    padding: 10px 15px; /* Adds padding to make tabs larger */
+}
+
+/* Additional styling can be added for hover, active states, etc. */
+.nav-link:hover {
+    background-color: #f8f9fa; /* Light grey background on hover */
+}
+
+.nav-link.active {
+    background-color: #e9ecef; /* Active tab has a different background */
+    color: #495057; /* Darker text color for active state */
+}
+
+
+
 
 /* This CSS targets the main content area just below the header */
 main {
