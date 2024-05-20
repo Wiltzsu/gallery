@@ -133,10 +133,12 @@ add_action( 'widgets_init', 'mytheme_register_widgets5' );
 
 ###
 
-// Registers a widget area (winter header)
+###
+
+// Registers a widget area (contact)
 function mytheme_register_widgets6() {
     register_sidebar( array(
-        'name'          => esc_html__( 'Winter Gallery Header', 'theme-domain' ), // 'name' is what will appear in your WordPress admin area for the widget area.
+        'name'          => esc_html__( 'About me', 'theme-domain' ), // 'name' is what will appear in your WordPress admin area for the widget area.
         'id'            => 'custom-sidebar6', // 'id' is use for customizing and styling the widget area.
         'description'   => esc_html__( 'Add widgets here to appear in your sidebar.', 'theme-domain' ), // 'description' provides a description of the widget area for the admin area.
         // Define the HTML that will be used before and after each widget and widget title in this area.
@@ -147,23 +149,5 @@ function mytheme_register_widgets6() {
     ) );
 }
 add_action( 'widgets_init', 'mytheme_register_widgets6' );
-
-###
-
-// Registers a widget area (winter gallery)
-function mytheme_register_widgets7() {
-    register_sidebar( array(
-        'name'          => esc_html__( 'Winter Gallery', 'theme-domain' ), // 'name' is what will appear in your WordPress admin area for the widget area.
-        'id'            => 'custom-sidebar7', // 'id' is use for customizing and styling the widget area.
-        'description'   => esc_html__( 'Add widgets here to appear in your sidebar.', 'theme-domain' ), // 'description' provides a description of the widget area for the admin area.
-        // Define the HTML that will be used before and after each widget and widget title in this area.
-        'before_widget' => '<section id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</section>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
-    ) );
-}
-add_action( 'widgets_init', 'mytheme_register_widgets7' );
-
 
 ?>
