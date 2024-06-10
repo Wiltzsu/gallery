@@ -5,14 +5,13 @@
             <p>Description about your company.</p>
         </div>
         <div class="footer-section">
-            <h4>Contact Information</h4>
+            <h4>Contact Me</h4>
             <p>+123 456 7890</p>
             <p>info@example.com</p>
         </div>
         <div class="footer-section">
-            <h4>Follow Us</h4>
+            <h4>Follow</h4>
             <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
             <a href="#">Instagram</a>
         </div>
     </div>
