@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('gallery'); ?>
 
 <div class="container p-5  " id="">
 
