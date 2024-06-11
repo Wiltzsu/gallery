@@ -114,14 +114,15 @@ header h1 a {
 }
 
 .main-navigation ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 5px 10px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .main-navigation ul li a:hover,
 .main-navigation ul li a:focus {
-    background: #a1a1a1;
+    background: #d8d8d800;
     color: #fff;
 }
 
@@ -196,9 +197,11 @@ footer {
 /* Styling for nav-links to change font and add padding */
 .nav-link {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 20px; /* Adjust the font size */
-    padding: 10px 15px; /* Adds padding to make tabs larger */
+    font-size: 20px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions for background and color */
 }
+
 
 /* Additional styling can be added for hover, active states, etc. */
 .nav-link:hover {
